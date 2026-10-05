@@ -2,6 +2,8 @@
 
 An agent skill that plans, scripts, and captions short vertical videos for Instagram Reels, TikTok, and YouTube Shorts. It turns an idea or product into a **ready-to-record reel pack**: opening hooks, voiceover, visual directions, post caption, call-to-action, and a test plan.
 
+**Pair it with [HyperFrames](https://github.com/heygen-com/hyperframes)** to take the reel pack into video production: animations, captions, media composition, previews, and MP4 rendering.
+
 It is a writing and planning workflow expressed in Markdown instructions. It does not record your screen, render a video, upload posts, send messages, or guarantee views. An AI assistant reads the instructions and produces the creative materials.
 
 ## Exactly what it does
@@ -42,6 +44,29 @@ One-variable test plan
 ```
 
 An estimated duration is a planning aid. Read the script aloud and adjust it to your own speaking pace. Beat order is useful; the research's source timestamps were unreliable and are not treated as precise timing instructions.
+
+## Companion skill: HyperFrames
+
+Reel Maker and **[HyperFrames](https://github.com/heygen-com/hyperframes)** make a useful pair for a complete reel workflow.
+
+| Skill | Role |
+| --- | --- |
+| Reel Maker | Develop the angle, hooks, voiceover, shot directions, caption, call-to-action, and test plan. |
+| HyperFrames | Build the video composition, animate text and visuals, arrange supplied footage and audio, preview the result, and render an MP4. |
+
+Start with Reel Maker, then pass its script and visual directions to HyperFrames along with your real screen recordings, screenshots, and voiceover. For product demos, use genuine footage to demonstrate features.
+
+Example handoff when both skills are installed:
+
+```text
+$hyperframes
+Use the Reel Maker pack we just created to build a 1080 × 1920 reel.
+Use my supplied product footage and voiceover, follow the beat order,
+add readable captions, and keep the closing "Comment REVIT" overlay.
+Preview the composition, then render the finished video as an MP4.
+```
+
+HyperFrames is an optional companion, installed separately. This repository contains Reel Maker only. Follow the [official HyperFrames setup instructions](https://github.com/heygen-com/hyperframes#quick-start) for installation and runtime requirements.
 
 ## Install for Codex in one project
 
