@@ -1,10 +1,30 @@
-# Reel Maker
+# Reel Maker — AI Agent Skill for Instagram Reels, TikTok & YouTube Shorts
 
-An agent skill that plans, scripts, and captions short vertical videos for Instagram Reels, TikTok, and YouTube Shorts. It turns an idea or product into a **ready-to-record reel pack**: opening hooks, voiceover, visual directions, post caption, call-to-action, and a test plan.
+**Reel Maker is an AI agent skill for writing Instagram Reel scripts, TikTok video scripts, and YouTube Shorts scripts.** Generate original hooks, voiceover scripts, shot directions, on-screen text, post captions, hashtags, and calls-to-action from a topic or product. The output is a **ready-to-record reel pack**, with an editing checklist and a test plan informed by 199 analyzed Instagram reels.
+
+Use it with **Codex, Claude Code, Cursor**, or another assistant that supports the [Agent Skills format](https://agentskills.io/specification). Use cases include short-form video planning, product demo scripts, educational videos, hook rewrites, and reel performance reviews.
 
 **Pair it with [HyperFrames](https://github.com/heygen-com/hyperframes)** to take the reel pack into video production: animations, captions, media composition, previews, and MP4 rendering.
 
 It is a writing and planning workflow expressed in Markdown instructions. It does not record your screen, render a video, upload posts, send messages, or guarantee views. An AI assistant reads the instructions and produces the creative materials.
+
+## Quick install for AI agents
+
+Run this from the project where you want the skill available:
+
+```sh
+npx skills add Develifture/reel-maker --skill reel-maker --agent codex --copy --yes
+```
+
+This uses the [Skills CLI](https://github.com/vercel-labs/skills) and installs for Codex in the current project. To target Claude Code or Cursor, replace `codex` with `claude-code` or `cursor`. Then ask your assistant to use `reel-maker`; in Codex, invoke `$reel-maker`.
+
+To inspect available skills without installing:
+
+```sh
+npx skills add Develifture/reel-maker --list
+```
+
+Prefer a manual installation? See [Install for Codex in one project](#install-for-codex-in-one-project).
 
 ## Exactly what it does
 
@@ -146,6 +166,46 @@ Read [references/evidence.md](references/evidence.md) for the numbers and caveat
 | [scripts/features.py](scripts/features.py) | Optional Python research helper for a compatible local reel-watcher dataset |
 
 The references load only when relevant. The Python helper is not needed to write a reel or use the documented workflow.
+
+## Direct access for AI agents
+
+Public Markdown files are available without a GitHub account. Agents can read the skill directly, or start with the small navigation index and fetch only the relevant references:
+
+| Resource | Direct text URL |
+| --- | --- |
+| Skill instructions | [SKILL.md](https://raw.githubusercontent.com/Develifture/reel-maker/main/SKILL.md) |
+| Agent navigation index | [llms.txt](https://raw.githubusercontent.com/Develifture/reel-maker/main/llms.txt) |
+| Repository guidance | [AGENTS.md](https://raw.githubusercontent.com/Develifture/reel-maker/main/AGENTS.md) |
+| Overview and installation | [README.md](https://raw.githubusercontent.com/Develifture/reel-maker/main/README.md) |
+| Codex display metadata | [agents/openai.yaml](agents/openai.yaml) |
+
+`SKILL.md` uses the Agent Skills format with task-specific discovery metadata. `agents/openai.yaml` supplies Codex display metadata. `llms.txt` is an optional navigation aid; support depends on the consuming agent. These files provide direct access and installation paths without promising placement in a search engine or skill directory.
+
+## Common questions
+
+### Can I use AI to write an Instagram Reel script?
+
+Yes. Give Reel Maker your topic, audience, target length, available visuals, and desired call-to-action. It returns five hooks, a voiceover, shot directions, and a caption. Provide real product documentation or footage when you want a factual demo.
+
+### Does the skill write TikTok scripts and YouTube Shorts scripts too?
+
+Yes. Its short-form video workflow supports Instagram Reels, TikTok, and YouTube Shorts. Specify the platform and adapt the script to your audience and speaking pace.
+
+### Is Reel Maker a video generator?
+
+Its output is text and production directions. Pair it with [HyperFrames](#companion-skill-hyperframes) to build, preview, and render a video using supplied footage and audio.
+
+### Can it improve my reel hook or caption?
+
+Yes. Supply your draft and ask for a critique or rewrite. It checks specificity, proof, word budget, visual directions, and alignment between the script and call-to-action.
+
+### Does it require an API key or the research dataset?
+
+The writing skill itself requires neither. Your assistant may have its own account or runtime requirements. The optional Python research helper needs a compatible local dataset; that dataset is not distributed here.
+
+### Will it make a reel go viral?
+
+No outcome is guaranteed. The evidence is observational, concentrated in the AI and developer-tool niche, and affected by account reach and post age. Use the test plan to learn from your own comparable posts.
 
 ## Optional research helper
 

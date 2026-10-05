@@ -1,0 +1,29 @@
+# Reel Maker
+
+> AI agent skill for writing Instagram Reels, TikTok video scripts, and YouTube Shorts: original hooks, voiceover scripts, shot directions, captions, hashtags, calls-to-action, and test plans.
+
+Canonical repository: https://github.com/Develifture/reel-maker
+Skill identifier: reel-maker. The workflow produces text and recording directions. The optional HyperFrames companion handles video production when installed separately. No API keys or research data are required to use the writing workflow. The evidence is observational, drawn from 199 predominantly AI and developer-tool Instagram reels, and does not guarantee performance.
+
+Install in the current project for Codex: `npx skills add Develifture/reel-maker --skill reel-maker --agent codex --copy --yes`. Substitute `claude-code` or `cursor` to target those agents. Start by reading the skill instructions, then retrieve only the reference needed for the user's task.
+
+## Start here
+
+- [Skill instructions](https://raw.githubusercontent.com/Develifture/reel-maker/main/SKILL.md): Canonical workflow, modes, output format, and evidence constraints.
+- [Overview and installation](https://raw.githubusercontent.com/Develifture/reel-maker/main/README.md): Capabilities, project-local installation, example prompts, FAQ, and HyperFrames handoff.
+- [Repository guidance](https://raw.githubusercontent.com/Develifture/reel-maker/main/AGENTS.md): Guidance for using and maintaining this repository.
+- [Codex display metadata](https://raw.githubusercontent.com/Develifture/reel-maker/main/agents/openai.yaml): Display name, short description, and example invocation prompt.
+
+## Writing references
+
+- [Hook bank](https://raw.githubusercontent.com/Develifture/reel-maker/main/references/hook-bank.md): Twelve opening archetypes and first-frame guidance.
+- [Script templates](https://raw.githubusercontent.com/Develifture/reel-maker/main/references/script-templates.md): Seven beat structures and approximate spoken word budgets.
+- [Calls-to-action and captions](https://raw.githubusercontent.com/Develifture/reel-maker/main/references/cta-and-caption.md): Comment keywords, delivery offers, and post captions.
+- [Testing and iteration](https://raw.githubusercontent.com/Develifture/reel-maker/main/references/test-loop.md): Compare posts at the same age and test one variable at a time.
+- [Research evidence](https://raw.githubusercontent.com/Develifture/reel-maker/main/references/evidence.md): Dataset method, reported statistics, and methodological limits.
+
+## Optional
+
+- [Research helper](https://raw.githubusercontent.com/Develifture/reel-maker/main/scripts/features.py): Python standard-library analysis functions; requires a separate compatible local dataset.
+- [HyperFrames](https://github.com/heygen-com/hyperframes): Optional companion for composing, animating, previewing, and rendering the finished video.
+- [Agent Skills specification](https://agentskills.io/specification): Skill format and discovery metadata.

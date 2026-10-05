@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reel Maker"
+  short_description: "Write hooks, scripts, and captions for short videos"
+  default_prompt: "Use $reel-maker to turn my topic into a reel pack with five hooks, a voiceover script, shot directions, and a post caption."

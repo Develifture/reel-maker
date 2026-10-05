@@ -1,6 +1,9 @@
 ---
 name: reel-maker
-description: Plan, script and caption short-form vertical video (Instagram Reels, TikTok, YouTube Shorts) using patterns measured from 199 high-view reels. Use whenever the user wants to make a reel, short or TikTok; write or improve a hook, opening line, script, on-screen text, post caption, hashtags or comment-keyword call-to-action; choose an angle or topic for a reel; adapt another creator's reel structure to their own topic; or work out why a reel under-performed. Use it even if they never say "viral" or "skill" - for example "give me 5 hooks", "turn this idea into a 30 second video", "what should I post", "critique my script", "why did this reel flop".
+description: Plan and write Instagram Reels, TikTok videos, and YouTube Shorts with original hooks, voiceover scripts, shot directions, captions, hashtags, and calls-to-action. Use for short-form video ideas, product demo scripts, hook or caption rewrites, adapting a reference reel, and reviewing an underperforming reel. Informed by 199 analyzed Instagram reels. Produces text and recording directions; use a separate production tool such as HyperFrames when the user requests a rendered video.
+metadata:
+  author: "Develifture"
+  repository: "https://github.com/Develifture/reel-maker"
 ---
 
 # Reel Maker
@@ -115,3 +118,7 @@ What to vary in the next reel, and what to log (see references/test-loop.md).
 | `references/cta-and-caption.md` | Writing the call-to-action, keyword, post caption and hashtags. |
 | `references/test-loop.md` | Measuring a reel, benchmarks, diagnosing a flop, planning the next test. |
 | `references/evidence.md` | The user asks "how do you know", or you need exact numbers, caveats or the method. |
+
+## Optional video production handoff
+
+When the user requests a finished video and HyperFrames is available, pass the reel pack and supplied footage or audio to its workflow. [HyperFrames](https://github.com/heygen-com/hyperframes) handles composition, animation, preview, and rendering. It is installed separately; the Reel Maker pack is a text deliverable until video production is completed.
